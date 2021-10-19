@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Preços Tabela FIPE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="col-6 offset-3">
+            <a href="fipe.html"><h2 id=cabecalho style="text-align: center;">Consultor Tabela FIPE</h2></a><hr>
+            <h3 id="selecionar" style="text-align: center;">Selecione uma marca:</h3>
+            <ul class="row" id="ul_marcas">
+
+            </ul>
+            <table class="table" id="tabela"></table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="alakazam.js"></script>
+    <script>
+        pegarMarcas();
+    </script>
+</body>
+</html>
