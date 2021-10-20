@@ -4,7 +4,7 @@ function adicionarMarca(marca) {
 }
 
 function adicionarModelo(modelo) {
-    let modelo_append = `<button type="button" style="text-align:center;" class="list-group-item list-group-item-action" onclick="pegarModelos(${modelo.codigo})">${modelo.nome}</button>`;
+    let modelo_append = `<button type="button" style="text-align:center;" class="list-group-item list-group-item-action" onclick="pegarAnos(${modelo.codigo})">${modelo.nome}</button>`;
     $("#ul_marcas").append(modelo_append);
 }
 
