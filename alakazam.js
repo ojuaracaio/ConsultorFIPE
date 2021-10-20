@@ -1,10 +1,10 @@
 function adicionarMarca(marca) {
-    let modelo = `<li><a onclick="pegarModelos(${marca.codigo})" href="javascript:void(0);">${marca.nome}</li>`;
+    let modelo = `<button type="button" style="text-align:center;" class="list-group-item list-group-item-action" onclick="pegarModelos(${marca.codigo})">${marca.nome}</button>`;
     $("#ul_marcas").append(modelo);
 }
 
 function adicionarModelo(modelo) {
-    let modelo_append = `<li><a onclick="pegarAnos(${modelo.codigo})" href="javascript:void(0);">${modelo.nome}</li>`;
+    let modelo_append = `<button type="button" style="text-align:center;" class="list-group-item list-group-item-action" onclick="pegarModelos(${modelo.codigo})">${modelo.nome}</button>`;
     $("#ul_marcas").append(modelo_append);
 }
 
@@ -13,7 +13,7 @@ function adicionarAnos(ano) {
     let ano_str = JSON.stringify(ano);
     let ano_slice = ano_str.slice(9,13) + "-" +ano_str.slice(ano_str.length-3,ano_str.length-2);
     console.log(ano_slice)
-    let modelo = `<li><a onclick="pegarValores(${ano_str.slice(9,13)},${ano_str.slice(ano_str.length-3,ano_str.length-2)})" href="javascript:void(0);">${ano.nome}</li>`;
+    let modelo = `<button type="button" style="text-align:center;" class="list-group-item list-group-item-action" onclick="pegarValores(${ano_str.slice(9,13)},${ano_str.slice(ano_str.length-3,ano_str.length-2)})">${ano.nome}</button>`;
     $("#ul_marcas").append(modelo);
 }
 
